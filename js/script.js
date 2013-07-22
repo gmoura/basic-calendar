@@ -1,7 +1,7 @@
 function loaderCalendar( updateMonth ) {
 
 	var
-		date 			= new Date(),
+		date 		= new Date(),
 		upMonth		= ( (updateMonth == null) ?  date.getMonth() : updateMonth ),
 		startday 	= setStartDay( date.getFullYear(), upMonth, 1 );
 
@@ -13,10 +13,10 @@ function loaderCalendar( updateMonth ) {
 function loadMonths ( currentMoth ) {
 
 	var
-		groupMonths  				= document.getElementById("months"),
-		titleMonths 				= ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-		titleMonthsLeng 		= titleMonths.length,
-		newMonthButton 			= null,
+		groupMonths  		= document.getElementById("months"),
+		titleMonths 		= ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+		titleMonthsLeng 	= titleMonths.length,
+		newMonthButton 		= null,
 		newMonthButtonText 	= null,
 		newMonthClass 			= 'btn'; // Default Class
 
@@ -48,9 +48,9 @@ function loadDays ( startday, daysMonth ) {
 
 
 	var
-		groupDays  		= document.getElementById("days"),
-		block  				= 1,
-		blockDays 		= 42, // 7 col x 6 lines
+		groupDays  	= document.getElementById("days"),
+		block  		= 1,
+		blockDays 	= 42, // 7 col x 6 lines
 		newLineDays  	= document.createElement('tr'),
 		newBlockDay 	= null,
 		setStartDay 	= null;
